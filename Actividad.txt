@@ -1,0 +1,100 @@
+Ejercicio1
+
+head -n10 users.txt 
+
+
+Ejercicio2
+
+tail -n5 users.txt
+
+
+Ejercicio3
+
+tail -n+11 users.txt
+
+
+Ejercicio4
+
+tail -n+11 users.txt | head -n10
+
+per a que ens mostre les 10 primeres sobre el comand anterior.
+
+
+Ejercicio5
+
+cut -b 1 users.txt
+
+
+Ejercicio6
+
+cut -b 1,3,5 users.txt
+
+
+Ejercicio7
+
+cat users.txt | grep -v ^[#] | cut -d: -f1
+
+
+Ejercicio8
+
+cat users.txt | grep -v ^[#,_] | cut -d: -f1
+
+
+Ejercicio9
+
+cat users.txt | grep -v ^[#] | cut -d: -f3
+
+
+Ejercicio10
+
+cat -n users.txt | sort -rn
+
+
+Ejercicio11
+
+cat users.txt | sort -t: -k3 -n
+
+
+Ejercicio12
+
+cat users.txt | grep -v ^[#] | cut -d: -f4 | sort -n1
+
+
+Ejercicio13
+
+cat users.txt | grep -v ^[#] | cut -d: -f1,7 | sed 's/:/-/'
+
+
+Ejercicio14
+
+cat users.txt | grep -v ^[#] | cut -d: -f1,5 | sed 's/:/*/'
+
+
+Ejercicio15
+
+cat users.txt | sed 's/false/NO/'
+
+
+Ejercicio16
+
+cat users.txt | grep root.*Administrator | sed 's/System Administrator/Administrador del sistema/'
+
+
+Ejercicio17
+
+cat users.txt | sed s'/_//'
+
+
+Ejercicio18
+
+cat -n users.txt | tail -n+4 | head -n1 | sed 's/system/SISTEMA/'
+
+
+Ejercicio19
+
+cat users.txt | grep -v ^[#] | cut -d: -f1,3,6 | sed 's/:/-/g'
+
+
+Ejercicio20
+
+cat -n users.txt | grep -v ^[#] | cut -d: -f1,3,6 | sed 's/:/-/g' | sort -rn | sort -k3n
