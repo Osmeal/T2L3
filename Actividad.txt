@@ -17,7 +17,6 @@ Ejercicio4
 
 tail -n+11 users.txt | head -n10
 
-per a que ens mostre les 10 primeres sobre el comand anterior.
 
 
 Ejercicio5
